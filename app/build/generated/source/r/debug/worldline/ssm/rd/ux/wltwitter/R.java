@@ -2508,7 +2508,7 @@ public final class R {
     public static final int title_template=0x7f080067;
     public static final int top=0x7f080068;
     public static final int topPanel=0x7f080069;
-    public static final int tweetsListsView=0x7f08006a;
+    public static final int tweetsListView=0x7f08006a;
     public static final int tweetsRootRelativeLayout=0x7f08006b;
     public static final int up=0x7f08006c;
     public static final int useLogo=0x7f08006d;

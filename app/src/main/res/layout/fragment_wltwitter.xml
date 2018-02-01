@@ -10,7 +10,7 @@
 
 
     <ListView
-        android:id="@+id/tweetsListsView"
+        android:id="@+id/tweetsListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@color/blue_twitter"

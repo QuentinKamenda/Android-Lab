@@ -45,48 +45,48 @@ public class TweetsFragment extends Fragment implements TweetChangeListener {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        //super.onCreateView(inflater, container, savedInstanceState);
 
-
-        //Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_wltwitter, container, false);
-
-        // Get the ListView
         View rootView = inflater.inflate(R.layout.fragment_wltwitter, container, false);
 
-        // Set a Progress Bar as empty view, and display it (set adapter with no element)
-        /*
+        mListView = (ListView) rootView.findViewById(R.id.tweetsListView);
+
+        // Set a ProgressBar as empty view, and display it (set adapter with no element)
         final ProgressBar progressBar = new ProgressBar(getActivity());
-        progressBar.setLayoutParams(new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT, Gravity.CENTER));
+        progressBar.setLayoutParams(new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT,
+                ActionBar.LayoutParams.WRAP_CONTENT, Gravity.CENTER));
         progressBar.setIndeterminate(true);
         mListView.setEmptyView(progressBar);
-        */
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (null != mListener){
+                    final Tweet tweet = (Tweet) parent.getItemAtPosition(position);
+                    mListener.onViewTweet(tweet);
+                }
+            }
+        });
 
-        // Add the view in out content view
-        /*
+        // Add the view in our content viex
         ViewGroup root = (ViewGroup) rootView.findViewById(R.id.tweetsRootRelativeLayout);
         root.addView(progressBar);
-        */
-
-        mListView = (ListView) rootView.findViewById(R.id.tweetsListsView);
-
-        //mListView.setOnClickListener((View.OnClickListener) this);
-
 
         return rootView;
     }
 
+
     @Override
     public void onTweetRetrieved(List<Tweet> tweets) {
 
-        /*
+        /* Display tweets in Log
         for (Tweet tweet:tweets){
             Log.d("result", tweet.text);
         }
         */
 
-        final ArrayAdapter<Tweet> adapter = new ArrayAdapter<Tweet>(getActivity(), android.R.layout.simple_list_item_1, tweets);
+        final ArrayAdapter<Tweet> adapter = new ArrayAdapter<Tweet>(getActivity(),
+                android.R.layout.simple_list_item_1, tweets);
         mListView.setAdapter(adapter);
 
     }
@@ -94,6 +94,9 @@ public class TweetsFragment extends Fragment implements TweetChangeListener {
     @Override
     public void onStart() {
         super.onStart();
+
+        SharedPreferences prefs = getActivity().getSharedPreferences("preferences", Context.MODE_PRIVATE);
+
 
         final String login = this.getActivity().getSharedPreferences("preferences", Context.MODE_PRIVATE).getString("LOGIN", "POTUS");
         if (!TextUtils.isEmpty(login)){
@@ -110,15 +113,6 @@ public class TweetsFragment extends Fragment implements TweetChangeListener {
 
         if (activity instanceof TweetListener){
             mListener = (TweetListener) activity;
-        }
-    }
-
-
-    public void onItemClick(AdapterView<?> adapter, View view, int position) {
-
-        if (null != mListener){
-            final Tweet tweet = (Tweet) adapter.getItemAtPosition(position);
-            mListener.onViewTweet(tweet);
         }
     }
 

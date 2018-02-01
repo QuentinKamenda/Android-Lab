@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "D:\\Android Projects\\Android-Lab\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\qkame\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.2.0.aar\\6efe13d63bd43a9b27c0cd87466b196c\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {

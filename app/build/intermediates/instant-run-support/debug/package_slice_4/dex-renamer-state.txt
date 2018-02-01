@@ -1,4 +1,4 @@
-#Wed Jan 31 11:14:27 CET 2018
-base.0=D\:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Thu Feb 01 09:18:21 CET 2018
+base.0=D\:\\Android Projects\\Android-Lab\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex

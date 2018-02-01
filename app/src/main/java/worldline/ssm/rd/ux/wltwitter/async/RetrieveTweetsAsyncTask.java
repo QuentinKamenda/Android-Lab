@@ -17,10 +17,10 @@ import worldline.ssm.rd.ux.wltwitter.pojo.Tweet;
 public class RetrieveTweetsAsyncTask extends AsyncTask<String, Void, List<Tweet>> {
 
 
-    private TweetChangeListener mlistener;
+    private TweetChangeListener mListener;
 
     public RetrieveTweetsAsyncTask(TweetChangeListener mlistener) {
-        this.mlistener = mlistener;
+        this.mListener = mListener;
     }
 
     @Override
@@ -35,6 +35,13 @@ public class RetrieveTweetsAsyncTask extends AsyncTask<String, Void, List<Tweet>
     protected void onPostExecute(List<Tweet> tweets) {
         super.onPostExecute(tweets);
 
-        mlistener.onTweetRetrieved(tweets);
+        for (int i = 0; i < tweets.size(); i++){
+            //System.out.println(tweets.get(i).text);
+            Log.d("TwitterAsyncTask", tweets.get(i).text);
+        }
+
+        if (null != mListener && null != tweets){
+            mListener.onTweetRetrieved(tweets);
+        }
     }
 }

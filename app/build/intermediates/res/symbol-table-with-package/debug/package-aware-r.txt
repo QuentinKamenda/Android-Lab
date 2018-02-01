@@ -652,7 +652,7 @@ int id title 0x7f080066
 int id title_template 0x7f080067
 int id top 0x7f080068
 int id topPanel 0x7f080069
-int id tweetsListsView 0x7f08006a
+int id tweetsListView 0x7f08006a
 int id tweetsRootRelativeLayout 0x7f08006b
 int id up 0x7f08006c
 int id useLogo 0x7f08006d
