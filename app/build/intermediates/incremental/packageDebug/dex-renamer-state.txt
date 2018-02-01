@@ -1,0 +1,7 @@
+#Thu Jan 25 11:52:53 CET 2018
+base.0=D\:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_3fa710d20128e5f9b224a68911755fb54168110a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3ae982a5648e2e86f3012b25778b54a82831fbd5\\classes.dex
+base.1=D\:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3ae982a5648e2e86f3012b25778b54a82831fbd5
+file.0=D\:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_3fa710d20128e5f9b224a68911755fb54168110a\\classes.dex

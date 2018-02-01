@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\twitter.png",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\drawable-xxhdpi\\twitter.png"
+    }
+]

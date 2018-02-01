@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\animator\\slide_in_right.xml",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\animator\\slide_in_right.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\animator\\slide_in_left.xml",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\animator\\slide_in_left.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\animator\\slide_out_left.xml",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\animator\\slide_out_left.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\animator\\slide_out_right.xml",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\animator\\slide_out_right.xml"
+    }
+]

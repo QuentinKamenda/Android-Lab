@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\menu\\wltwitter.xml",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\menu\\wltwitter.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\WLTwitter\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "D:\\Android Projects\\WLTwitter\\app\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]
