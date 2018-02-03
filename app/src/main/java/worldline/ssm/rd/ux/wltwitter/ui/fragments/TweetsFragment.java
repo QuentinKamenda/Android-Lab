@@ -23,6 +23,7 @@ import java.util.List;
 import worldline.ssm.rd.ux.wltwitter.R;
 import worldline.ssm.rd.ux.wltwitter.WLTwitterActivity;
 import worldline.ssm.rd.ux.wltwitter.WLTwitterApplication;
+import worldline.ssm.rd.ux.wltwitter.adapter.TweetsAdapter;
 import worldline.ssm.rd.ux.wltwitter.async.RetrieveTweetsAsyncTask;
 import worldline.ssm.rd.ux.wltwitter.interfaces.TweetChangeListener;
 import worldline.ssm.rd.ux.wltwitter.interfaces.TweetListener;
@@ -85,9 +86,16 @@ public class TweetsFragment extends Fragment implements TweetChangeListener {
         }
         */
 
-        final ArrayAdapter<Tweet> adapter = new ArrayAdapter<Tweet>(getActivity(),
-                android.R.layout.simple_list_item_1, tweets);
+        /* Quite bad ArrayAdapter, DO NOT USE
+        final ArrayAdapter<Tweet> adapter = new ArrayAdapter<Tweet>(getActivity(), android.R.layout.simple_list_item_1, tweets);
+        */
+
+        // Custom Adapter (way better)
+        final TweetsAdapter adapter = new TweetsAdapter(tweets);
+
+
         mListView.setAdapter(adapter);
+
 
     }
 

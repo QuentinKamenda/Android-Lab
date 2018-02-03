@@ -2508,13 +2508,18 @@ public final class R {
     public static final int title_template=0x7f080067;
     public static final int top=0x7f080068;
     public static final int topPanel=0x7f080069;
-    public static final int tweetsListView=0x7f08006a;
-    public static final int tweetsRootRelativeLayout=0x7f08006b;
-    public static final int up=0x7f08006c;
-    public static final int useLogo=0x7f08006d;
-    public static final int withText=0x7f08006e;
-    public static final int wrap=0x7f08006f;
-    public static final int wrap_content=0x7f080070;
+    public static final int tweetAlias=0x7f08006a;
+    public static final int tweetContent=0x7f08006b;
+    public static final int tweetPic=0x7f08006c;
+    public static final int tweetRTButton=0x7f08006d;
+    public static final int tweetUserName=0x7f08006e;
+    public static final int tweetsListView=0x7f08006f;
+    public static final int tweetsRootRelativeLayout=0x7f080070;
+    public static final int up=0x7f080071;
+    public static final int useLogo=0x7f080072;
+    public static final int withText=0x7f080073;
+    public static final int wrap=0x7f080074;
+    public static final int wrap_content=0x7f080075;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -2565,6 +2570,7 @@ public final class R {
     public static final int select_dialog_multichoice_material=0x7f0a0027;
     public static final int select_dialog_singlechoice_material=0x7f0a0028;
     public static final int support_simple_spinner_dropdown_item=0x7f0a0029;
+    public static final int tweet_custom_layout=0x7f0a002a;
   }
   public static final class menu {
     public static final int menu_main=0x7f0b0000;
